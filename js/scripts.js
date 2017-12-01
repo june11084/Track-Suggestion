@@ -1,17 +1,14 @@
-var add = function(number1, number2) {
-  return number1 + number2;
-};
-
-$(document).ready(function() {
+ $(document).ready(function() {
   $("form#quiz").submit(function() {
     event.preventDefault();
     var name = $("#name").val();
     var ruby = 0;
-    var php = 0;
+    var php = 0;                //initializing all the variables with int
     var java = 0;
     var css = 0;
     var c = 0;
 
+    // all the different radio button sections
     var application = $("input:radio[name=application]:checked").val();
     if (application === "ruby") {
       ruby += 1;
@@ -39,7 +36,7 @@ $(document).ready(function() {
     }
 
     if(ruby != php != java != css != c){    //if all options are "not" selected the equal amount of times
-      var result = Math.max(ruby,php,java,css,c); //this is the only  way I could think of without using array
+      var result = Math.max(ruby,php,java,css,c); //returning the highest variable, then set them to strings. 
       if(result === ruby){
         ruby = "Ruby/Rails";
         $("#result").text(name + ", you are most compatible with: " + ruby);
