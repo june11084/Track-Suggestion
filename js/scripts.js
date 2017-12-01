@@ -82,7 +82,7 @@
       var result = Math.max(ruby,php,java,css,c); //returning the highest variable, then set them to strings.
       if(result === ruby){
         ruby = "Ruby/Rails";
-        $("#result").text(name + ", you are most compatible with: " + ruby + "and another one");
+        $("#result").text(name + ", you are most compatible with: " + ruby);
       }
       if(result === php){
         php = "PHP/Drupal";
