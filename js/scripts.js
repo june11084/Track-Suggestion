@@ -75,7 +75,8 @@
     }
 
     $("#resultNumber").text("You have selected: Ruby:" + ruby + "," + "php:" + php + "," + "java:" + java + "," + "css:" +css + "," + "c#:" + c);
-
+    $("#congrats").fadeIn();
+    
     if(ruby === php === java === css === c){
       $("#result").text(name + ", you are compatible with any track");   //if all options are "not" selected the equal amount of times
     } else { // all choices are selected equal amout of times, probably"
