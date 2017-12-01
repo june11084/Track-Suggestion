@@ -74,11 +74,15 @@
       c += 1;
     }
 
-    if(ruby != php != java != css != c){    //if all options are "not" selected the equal amount of times
+    $("#resultNumber").text("You have selected: Ruby:" + ruby + "," + "php:" + php + "," + "java:" + java + "," + "css:" +css + "," + "c#:" + c);
+
+    if(ruby === php === java === css === c){
+      $("#result").text(name + ", you are compatible with any track");   //if all options are "not" selected the equal amount of times
+    } else { // all choices are selected equal amout of times, probably"
       var result = Math.max(ruby,php,java,css,c); //returning the highest variable, then set them to strings.
       if(result === ruby){
         ruby = "Ruby/Rails";
-        $("#result").text(name + ", you are most compatible with: " + ruby);
+        $("#result").text(name + ", you are most compatible with: " + ruby + "and another one");
       }
       if(result === php){
         php = "PHP/Drupal";
@@ -96,8 +100,6 @@
         c = "C#/.NET";
         $("#result").text(name + ", you are most compatible with: " + c);
       }
-    } else { // all choices are selected equal amout of times, probably"
-        $("#result").text(name + ", you are compatible with any track");
     }
   });
 });
