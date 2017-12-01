@@ -22,6 +22,19 @@
       c += 1;
     }
 
+    var work = $("input:radio[name=work]:checked").val();
+    if (work === "ruby") {
+      ruby += 1;
+    } else if (work === "php") {
+      php += 1;
+    } else if (work === "java") {
+      java += 1;
+    } else if (work === "css") {
+      css += 1;
+    } else if (work === "c") {
+      c += 1;
+    }
+
     var company = $("input:radio[name=company]:checked").val();
     if (company === "ruby") {
       ruby += 1;
@@ -35,8 +48,34 @@
       c += 1;
     }
 
+    var checked = $("input:radio[name=level]:checked").val();
+    if (checked === "ruby") {
+      ruby += 1;
+    } else if (checked === "php") {
+      php += 1;
+    } else if (checked === "java") {
+      java += 1;
+    } else if (checked === "css") {
+      css += 1;
+    } else if (checked === "c") {
+      c += 1;
+    }
+
+    var favorite = $("input:radio[name=favorite]:checked").val();
+    if (favorite === "ruby") {
+      ruby += 1;
+    } else if (favorite === "php") {
+      php += 1;
+    } else if (favorite === "java") {
+      java += 1;
+    } else if (favorite === "css") {
+      css += 1;
+    } else if (favorite === "c") {
+      c += 1;
+    }
+
     if(ruby != php != java != css != c){    //if all options are "not" selected the equal amount of times
-      var result = Math.max(ruby,php,java,css,c); //returning the highest variable, then set them to strings. 
+      var result = Math.max(ruby,php,java,css,c); //returning the highest variable, then set them to strings.
       if(result === ruby){
         ruby = "Ruby/Rails";
         $("#result").text(name + ", you are most compatible with: " + ruby);
