@@ -13,35 +13,80 @@
       <h1>Which Track should you take?</h1>
       <form id="quiz">
         <div class="form-group">
-          <label for="input1">Please Enter your name:</label>
-          <input id="input1" class="form-control" type="text">
+          <label for="name">Please Enter your name:</label>
+          <input id="name" class="form-control" type="text">
         </div>
 
+        <h3>What kind of application would you like to create?</h3>
         <div class="radio">
           <label>
-            <input type="radio" name="operator" value="add" checked>
-            add
+            <input type="radio" name="application" value="ruby">
+            Interactive Websites.
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="operator" value="subtract">
-            subtract
+            <input type="radio" name="application" value="php">
+            Back-end for website and utilizing 'server-side'.
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="operator" value="multiply">
-            multiply
+            <input type="radio" name="application" value="java">
+            High performance applications, android applications.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="application" value="css">
+            Making cool and beautiful websites.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="application" value="c">
+            High-level Business softwares, Windows OS.
+          </label>
+        </div>
+<!-- second question starts here~-->
+        <h3>What type of work would you like to do for everyday basis?</h3>
+        <div class="radio">
+          <label>
+            <input type="radio" name="company" value="ruby">
+            Website design and development.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="company" value="php">
+            Server Management for websites'.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="company" value="java">
+            creating efficient applications and optimizing the speed.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="company" value="css">
+            Again, Making cool and beautiful websites.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="company" value="c">
+            Developing complex and powerful softwares, operating system, or games.
           </label>
         </div>
 
 
 
 
-        <button type="submit" class="btn">Go!</button>
+        <button type="submit" class="btn btn-primary">Check Result</button>
       </form>
-      <div id="output"></div>
+      <div id="result"></div>
     </div> <!--container div-->
   </body>
 </html>
