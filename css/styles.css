@@ -1,6 +1,20 @@
 .container {
   margin-bottom:200px;
+  background-color: #5eafed;
+}
+.container h1, h3 {
+  font-family: cursive;
+  padding: 10px;
+  margin: 5px;
 }
 body{
     background-image: url("../img/programming.jpg");
+}
+.form-group label {
+  margin-left: 5px;
+  font-style: italic;
+}
+label {
+  font-size: 20px;
+  margin-left: 20px;
 }
