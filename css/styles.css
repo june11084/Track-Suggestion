@@ -20,4 +20,5 @@ label {
 }
 #congrats {
   display: none;
+  padding-top: 10px;
 }
