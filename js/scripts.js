@@ -75,11 +75,12 @@
     }
 
     $("#resultNumber").text("You have selected: Ruby:" + ruby + "," + "php:" + php + "," + "java:" + java + "," + "css:" +css + "," + "c#:" + c);
+    $("#congrats").fadeOut(); // refreshes the animation each time the result is shown
     $("#congrats").fadeIn();
-    
+
     if(ruby === php === java === css === c){
       $("#result").text(name + ", you are compatible with any track");   //if all options are "not" selected the equal amount of times
-    } else { // all choices are selected equal amout of times, probably"
+    } else { // all choices are not equal amout of times, probably"
       var result = Math.max(ruby,php,java,css,c); //returning the highest variable, then set them to strings.
       if(result === ruby){
         ruby = "Ruby/Rails";
